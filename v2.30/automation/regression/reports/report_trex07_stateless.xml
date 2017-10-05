@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="34" errors="0" failures="0" skip="1"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="0.232"><system-out><![CDATA[Starting TRex... done. (0s)
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'unknown': [], 'bi': [(0, 1)]}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_benchmark_test.STLBenchmark_Test" name="test_CPU_benchmark" time="213.306"><system-out><![CDATA[
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64}
+Done (10s), CPU util: 16.58, norm_pps_per_core: 25.59mpps norm_bw_per_core:   13.1Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 64}
+Done (7s), CPU util: 20.7, norm_pps_per_core: 20.26mpps norm_bw_per_core:  10.37Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 100, 'packet_len': 64}
+Done (7s), CPU util: 28.7, norm_pps_per_core: 14.61mpps norm_bw_per_core:   7.48Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 128}
+Done (11s), CPU util: 11.02, norm_pps_per_core: 21.89mpps norm_bw_per_core:  22.41Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 256}
+Done (8s), CPU util: 5.5872, norm_pps_per_core: 23.15mpps norm_bw_per_core:  47.18Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 512}
+Done (9s), CPU util: 2.7958, norm_pps_per_core: 24.01mpps norm_bw_per_core:  98.12Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 1500}
+Done (9s), CPU util: 1.117, norm_pps_per_core: 21.09mpps norm_bw_per_core: 251.83Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 4000}
+Done (10s), CPU util: 0.4123, norm_pps_per_core: 21.57mpps norm_bw_per_core: 689.25Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 9000}
+Done (8s), CPU util: 0.1882, norm_pps_per_core: 21.08mpps norm_bw_per_core: 1504.07Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 9000}
+Done (8s), CPU util: 0.16984, norm_pps_per_core: 23.15mpps norm_bw_per_core: 1666.77Gb/core
+Testing profile stl/imix.py, kwargs: {}
+Done (11s), CPU util: 11.86, norm_pps_per_core:  7.52mpps norm_bw_per_core:  22.86Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 64}
+Done (10s), CPU util: 52.72, norm_pps_per_core:  8.05mpps norm_bw_per_core:   4.13Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 128}
+Done (7s), CPU util: 31.12, norm_pps_per_core:  7.73mpps norm_bw_per_core:   7.81Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 256}
+Done (5s), CPU util: 19.52, norm_pps_per_core:  6.56mpps norm_bw_per_core:  12.77Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 512}
+Done (6s), CPU util: 9.978, norm_pps_per_core:  6.71mpps norm_bw_per_core:  26.81Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 1500}
+Done (11s), CPU util: 3.424, norm_pps_per_core:  6.87mpps norm_bw_per_core:  82.32Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 4000}
+Done (11s), CPU util: 1.0888, norm_pps_per_core:  8.17mpps norm_bw_per_core: 261.05Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 9000}
+Done (11s), CPU util: 0.30512, norm_pps_per_core: 12.98mpps norm_bw_per_core: 934.13Gb/core
+Testing profile stl/pcap.py, kwargs: {'loop_count': 0, 'ipg_usec': 2}
+Done (10s), CPU util: 0.60954, norm_pps_per_core: 23.36mpps norm_bw_per_core:  16.25Gb/core
+Testing profile stl/udp_rand_len_9k.py, kwargs: {}
+Done (11s), CPU util: 2.0176, norm_pps_per_core:  4.07mpps norm_bw_per_core: 141.11Gb/core
+Testing profile stl/hlt/hlt_udp_rand_len_9k.py, kwargs: {}
+Done (3s), CPU util: 1.6704, norm_pps_per_core:  3.98mpps norm_bw_per_core: 137.88Gb/core
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_arp_capture" time="0.390"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_basic_capture" time="0.318"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_ping_capture" time="7.365"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_capture" time="17.673"><system-out><![CDATA[
+
+2017-05-07 16:15:40 - [local][warning]   - ?[1mCPU util. is high: 87.1%?[22m
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_tx_rx" time="6.667"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_all_profiles" time="25.239"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+
+Profile: /stl/imix.py
+
+Profile: /stl/syn_attack.py
+
+Profile: /stl/udp_1pkt.py
+
+Profile: /stl/udp_1pkt_tuple_gen.py
+
+Profile: /stl/udp_rand_len_9k.py
+  * Skip due to config file...
+
+Profile: /stl/udp_1pkt_1mac_override.py
+
+Profile: /stl/udp_1pkt_1mac.py
+
+Profile: /stl/udp_1pkt_mac.py
+
+Profile: /stl/udp_1pkt_mpls.py
+
+Profile: /stl/udp_1pkt_mpls_vm.py
+
+Profile: /stl/udp_inc_len_9k.py
+  * Skip due to config file...
+
+Profile: /stl/burst_3st_1000pkt.py
+
+Profile: /stl/multi_burst_2st_1000pkt.py
+
+Profile: /stl/udp_1pkt_range_clients.py
+
+Profile: /stl/burst_3st_600pkt.py
+
+Profile: /stl/udp_1pkt_pcap.py
+
+Profile: /stl/udp_3pkt_pcap.py
+
+Profile: /stl/udp_1pkt_simple.py
+
+Profile: /stl/udp_1pkt_pcap_relative_path.py
+
+Profile: /stl/udp_1pkt_tuple_gen_split.py
+
+Profile: /stl/udp_1pkt_range_clients_split.py
+
+Profile: /stl/udp_1pkt_vxlan.py
+
+Profile: /stl/udp_1pkt_ipv6_in_ipv4.py
+
+Profile: /stl/udp_1pkt_simple_mac_dst.py
+
+Profile: /stl/udp_1pkt_simple_mac_dst_src.py
+
+Profile: /stl/udp_1pkt_simple_mac_src.py
+
+Profile: /stl/simple_3st.py
+
+Profile: /stl/flow_stats.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/udp_1pkt_mac_step.py
+
+Profile: /stl/udp_1pkt_mac_mask2.py
+
+Profile: /stl/udp_1pkt_dns.py
+
+Profile: /stl/udp_1pkt_mac_mask3.py
+
+Profile: /stl/udp_1pkt_mac_mask5.py
+
+Profile: /stl/udp_1pkt_src_ip_split_latency.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/udp_1pkt_simple_test.py
+
+Profile: /stl/udp_1pkt_simple_test2.py
+
+Profile: /stl/flow_stats_latency.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/udp_1pkt_1mac_step.py
+
+Profile: /stl/udp_1pkt_range_clients_split_garp.py
+
+Profile: /stl/udp_1pkt_simple_burst.py
+
+Profile: /stl/burst_split.py
+
+Profile: /stl/pcap_with_vm.py
+
+Profile: /stl/udp_1pkt_simple_bdir.py
+
+Profile: /stl/pcap.py
+
+Profile: /stl/udp_1pkt_src_ip_split.py
+
+Profile: /stl/udp_1pkt_mac_mask1.py
+
+Profile: /stl/udp_for_benchmarks.py
+
+Profile: /stl/bench.py
+
+Profile: /stl/burst_3st_loop_x_times.py
+
+Profile: /stl/burst_simple.py
+
+Profile: /stl/syn_attack_fix_cs_hw.py
+
+Profile: /stl/udp_1pkt_repeat_random.py
+
+Profile: /stl/yaml/burst_1000_pkt.yaml
+
+Profile: /stl/yaml/imix_1pkt_vm.yaml
+
+Profile: /stl/yaml/burst_1pkt_1burst.yaml
+
+Profile: /stl/yaml/burst_1pkt_vm.yaml
+
+Profile: /stl/yaml/imix_1pkt.yaml
+
+Profile: /stl/yaml/imix_1pkt_2.yaml
+
+Profile: /stl/yaml/imix_1pkt_tuple_gen.yaml
+
+Profile: /stl/yaml/imix_2pkt.yaml
+
+Profile: /stl/yaml/imix_1pkt_vm_minus.yaml
+
+Profile: /stl/yaml/imix_3pkt_vm.yaml
+
+Profile: /stl/yaml/imix_3pkt.yaml
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_connect_disconnect" time="0.113"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont" time="0.821"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_multi_burst" time="0.354"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_single_burst" time="0.347"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume" time="0.588"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pcap_remote" time="0.201"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_connect_disconnect" time="3.099"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_tx" time="1.654"><system-out><![CDATA[WARNING disable strict due to trex-325 on mlx5
+]]></system-out></testcase><testcase classname="stateless_tests.stl_examples_test.STLExamples_Test" name="test_stl_examples" time="11.000"><system-out><![CDATA[Running command: sh -c 'cd ../trex_control_plane/stl/examples; /router/bin/python3 stl_imix.py -s 10.56.216.125'
+Stdout:
+Mapped ports to sides [0] <--> [1]
+Injecting [0] <--> [1] on total rate of '30%' for 10 seconds
+
+Packets injected from [0]: 46,911,087
+Packets injected from [1]: 46,911,087
+
+packets lost from [0] --> [0]:   0 pkts
+packets lost from [1] --> [1]:   0 pkts
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_ping" time="25.315"><system-out><![CDATA[
+No IPv6 replies in loopback as expected.
+Got no replies from unknown IPv6 as expected.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_scan6" time="5.717"><system-out><![CDATA[
+No devices found in loopback as expected.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_multi_cpus" time="70.678"><system-out><![CDATA[
+Executing performance scenario: 'syn attack - 64 bytes, multi CPUs'
+
+Step 1 - waiting for stabilization... (10 seconds)
+......
+
+2017-05-07 16:17:19 - [local][warning]   - ?[1mCPU util. is high: 85.7%?[22m
+....
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                syn attack - 64 bytes, multi CPUs
+machine name:                            trex07
+DP core count:                           7
+average CPU:                             700.0
+average Gbps:                            29.2093942784
+average Mpps:                            57.0495966
+average pkt size (bytes):                64.00000179492943
+average Gbps per core (at 100% CPU):     4.1727706112
+average Mpps per core (at 100% CPU):     8.14994237142857
+
+golden Mpps per core (at 100% CPU):      min: 8.0, max 11.0
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_single_cpu" time="70.738"><system-out><![CDATA[
+Executing performance scenario: 'syn attack - 64 bytes, single CPU'
+
+Step 1 - waiting for stabilization... (10 seconds)
+..........
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                syn attack - 64 bytes, single CPU
+machine name:                            trex07
+DP core count:                           1
+average CPU:                             100.0
+average Gbps:                            5.303785224533334
+average Mpps:                            10.358955516666667
+average pkt size (bytes):                64.0
+average Gbps per core (at 100% CPU):     5.303785224533334
+average Mpps per core (at 100% CPU):     10.358955516666667
+
+golden Mpps per core (at 100% CPU):      min: 8.4, max 14.0
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus" time="70.681"><system-out><![CDATA[
+Executing performance scenario: 'VM - 64 bytes, multi CPUs'
+
+Step 1 - waiting for stabilization... (10 seconds)
+.......
+
+2017-05-07 16:19:40 - [local][warning]   - ?[1mCPU util. is high: 87.7%?[22m
+...
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                VM - 64 bytes, multi CPUs
+machine name:                            trex07
+DP core count:                           7
+average CPU:                             700.0
+average Gbps:                            30.113464695466668
+average Mpps:                            58.815360866666666
+average pkt size (bytes):                63.99999985491319
+average Gbps per core (at 100% CPU):     4.301923527923809
+average Mpps per core (at 100% CPU):     8.402194409523808
+
+golden Mpps per core (at 100% CPU):      min: 7.7, max 10.8
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus_cached" time="70.690"><system-out><![CDATA[
+Executing performance scenario: 'VM - 64 bytes, multi CPU, cache size 1024'
+
+Step 1 - waiting for stabilization... (10 seconds)
+..........
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                VM - 64 bytes, multi CPU, cache size 1024
+machine name:                            trex07
+DP core count:                           7
+average CPU:                             222.76666666666665
+average Gbps:                            26.66723444053333
+average Mpps:                            52.08444133333334
+average pkt size (bytes):                64.0000011468556
+average Gbps per core (at 100% CPU):     11.970926727756996
+average Mpps per core (at 100% CPU):     23.38071584617687
+
+golden Mpps per core (at 100% CPU):      min: 22.0, max 24.3
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_single_cpu" time="70.768"><system-out><![CDATA[
+Executing performance scenario: 'VM - 64 bytes, single CPU'
+
+Step 1 - waiting for stabilization... (10 seconds)
+..........
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                VM - 64 bytes, single CPU
+machine name:                            trex07
+DP core count:                           1
+average CPU:                             100.0
+average Gbps:                            5.085787741866667
+average Mpps:                            9.933178866666667
+average pkt size (bytes):                64.00000204030017
+average Gbps per core (at 100% CPU):     5.085787741866667
+average Mpps per core (at 100% CPU):     9.933178866666667
+
+golden Mpps per core (at 100% CPU):      min: 9.6, max 13.3
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_single_cpu_cached" time="70.724"><system-out><![CDATA[
+Executing performance scenario: 'VM - 64 bytes, single CPU, cache size 1024'
+
+Step 1 - waiting for stabilization... (10 seconds)
+..........
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                VM - 64 bytes, single CPU, cache size 1024
+machine name:                            trex07
+DP core count:                           1
+average CPU:                             71.9
+average Gbps:                            7.618545024
+average Mpps:                            14.87997075
+average pkt size (bytes):                64.0
+average Gbps per core (at 100% CPU):     10.59602924061196
+average Mpps per core (at 100% CPU):     20.695369610570236
+
+golden Mpps per core (at 100% CPU):      min: 19.5, max 25.0
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_1_stream_many_iterations" time="55.574"><system-out><![CDATA[
+num cores 7 num 9k mbufs 20 num 4k mbufs 20
+
+injecting 1000 packets on port 0
+Stream: Flow stat. No latency
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Latency, no field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Latency, short packet with field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Latency, large packet field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Latency, 9k packet with field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Flow stat with vlan. No latency
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: IPv6 flow stat. No latency
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: IPv6 latency, no field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_9k_stream" time="297.065"><system-out><![CDATA[
+num cores 7 num 9k mbufs 20 num 4k mbufs 20
+Iteration 0
+ 0 - duration 46 pgid 7247 pkt_size 2623 s_port [0] 
+===>Iteration 0 PASS 0
+Iteration 1
+ 0 - duration 61 pgid 51859 pkt_size 4023 s_port [0] 
+===>Iteration 1 PASS 0
+Iteration 2
+ 0 - duration 70 pgid 51843 pkt_size 2823 s_port [0] 
+===>Iteration 2 PASS 0
+Iteration 3
+ 0 - duration 63 pgid 6477 pkt_size 8815 s_port [0] 
+===>Iteration 3 PASS 0
+Iteration 4
+ 0 - duration 56 pgid 23806 pkt_size 6416 s_port [0] 
+===>Iteration 4 PASS 0
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_fcs_stream" time="0.442"><system-out><![CDATA[
+num cores 7 num 9k mbufs 20 num 4k mbufs 20
+
+Sending from ports: [0, 1], has latency: True 
+
+Sending from ports: [0, 1], has latency: False 
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_incremental_latency_streams" time="26.256"><system-out><![CDATA[
+num cores 7 num 9k mbufs 20 num 4k mbufs 20
+port 0 : 1 streams at 0.5% of line rate
+
+port 0 : 2 streams at 1.0% of line rate
+
+port 0 : 3 streams at 1.5% of line rate
+
+port 0 : 4 streams at 2.0% of line rate
+
+port 0 : 5 streams at 2.5% of line rate
+
+port 0 : 6 streams at 3.0% of line rate
+
+port 0 : 7 streams at 3.5% of line rate
+
+port 0 : 8 streams at 4.0% of line rate
+
+port 0 : 9 streams at 4.5% of line rate
+
+port 0 : 10 streams at 5.0% of line rate
+
+port 0 : 11 streams at 5.5% of line rate
+
+port 0 : 12 streams at 6.0% of line rate
+
+port 0 : 13 streams at 6.5% of line rate
+
+port 0 : 14 streams at 7.0% of line rate
+
+port 0 : 15 streams at 7.5% of line rate
+
+port 0 : 16 streams at 8.0% of line rate
+
+port 0 : 17 streams at 8.5% of line rate
+
+port 0 : 18 streams at 9.0% of line rate
+
+port 0 : 19 streams at 9.5% of line rate
+
+port 0 : 20 streams at 10.0% of line rate
+
+port 0 : 21 streams at 10.5% of line rate
+
+port 0 : 22 streams at 11.0% of line rate
+
+port 0 : 23 streams at 11.5% of line rate
+
+port 0 : 24 streams at 12.0% of line rate
+
+port 0 : 25 streams at 12.5% of line rate
+
+port 0 : 26 streams at 13.0% of line rate
+
+port 0 : 27 streams at 13.5% of line rate
+
+port 0 : 28 streams at 14.0% of line rate
+
+port 0 : 29 streams at 14.5% of line rate
+
+port 0 : 30 streams at 15.0% of line rate
+
+port 0 : 31 streams at 15.5% of line rate
+
+port 0 : 32 streams at 16.0% of line rate
+
+port 0 : 33 streams at 16.5% of line rate
+
+port 0 : 34 streams at 17.0% of line rate
+
+port 0 : 35 streams at 17.5% of line rate
+
+port 0 : 36 streams at 18.0% of line rate
+
+port 0 : 37 streams at 18.5% of line rate
+
+port 0 : 38 streams at 19.0% of line rate
+
+port 0 : 39 streams at 19.5% of line rate
+
+port 0 : 40 streams at 20.0% of line rate
+
+port 0 : 41 streams at 20.5% of line rate
+
+port 0 : 42 streams at 21.0% of line rate
+
+port 0 : 43 streams at 21.5% of line rate
+
+port 0 : 44 streams at 22.0% of line rate
+
+port 0 : 45 streams at 22.5% of line rate
+
+port 0 : 46 streams at 23.0% of line rate
+
+port 0 : 47 streams at 23.5% of line rate
+
+port 0 : 48 streams at 24.0% of line rate
+
+port 0 : 49 streams at 24.5% of line rate
+
+port 0 : 50 streams at 25.0% of line rate
+
+port 0 : 51 streams at 25.5% of line rate
+
+port 0 : 52 streams at 26.0% of line rate
+
+port 0 : 53 streams at 26.5% of line rate
+
+port 0 : 54 streams at 27.0% of line rate
+
+port 0 : 55 streams at 27.5% of line rate
+
+port 0 : 56 streams at 28.0% of line rate
+
+port 0 : 57 streams at 28.5% of line rate
+
+port 0 : 58 streams at 29.0% of line rate
+
+port 0 : 59 streams at 29.5% of line rate
+
+port 0 : 60 streams at 30.0% of line rate
+
+port 0 : 61 streams at 30.5% of line rate
+
+port 0 : 62 streams at 31.0% of line rate
+
+port 0 : 63 streams at 31.5% of line rate
+
+port 0 : 64 streams at 32.0% of line rate
+
+port 0 : 65 streams at 32.5% of line rate
+
+port 0 : 66 streams at 33.0% of line rate
+
+port 0 : 67 streams at 33.5% of line rate
+
+port 0 : 68 streams at 34.0% of line rate
+
+port 0 : 69 streams at 34.5% of line rate
+
+port 0 : 70 streams at 35.0% of line rate
+
+port 0 : 71 streams at 35.5% of line rate
+
+port 0 : 72 streams at 36.0% of line rate
+
+port 0 : 73 streams at 36.5% of line rate
+
+port 0 : 74 streams at 37.0% of line rate
+
+port 0 : 75 streams at 37.5% of line rate
+
+port 0 : 76 streams at 38.0% of line rate
+
+port 0 : 77 streams at 38.5% of line rate
+
+port 0 : 78 streams at 39.0% of line rate
+
+port 0 : 79 streams at 39.5% of line rate
+
+port 0 : 80 streams at 40.0% of line rate
+
+port 0 : 81 streams at 40.5% of line rate
+
+port 0 : 82 streams at 41.0% of line rate
+
+port 0 : 83 streams at 41.5% of line rate
+
+port 0 : 84 streams at 42.0% of line rate
+
+port 0 : 85 streams at 42.5% of line rate
+
+port 0 : 86 streams at 43.0% of line rate
+
+port 0 : 87 streams at 43.5% of line rate
+
+port 0 : 88 streams at 44.0% of line rate
+
+port 0 : 89 streams at 44.5% of line rate
+
+port 0 : 90 streams at 45.0% of line rate
+
+port 0 : 91 streams at 45.5% of line rate
+
+port 0 : 92 streams at 46.0% of line rate
+
+port 0 : 93 streams at 46.5% of line rate
+
+port 0 : 94 streams at 47.0% of line rate
+
+port 0 : 95 streams at 47.5% of line rate
+
+port 0 : 96 streams at 48.0% of line rate
+
+port 0 : 97 streams at 48.5% of line rate
+
+port 0 : 98 streams at 49.0% of line rate
+
+port 0 : 99 streams at 49.5% of line rate
+
+port 0 : 100 streams at 50.0% of line rate
+
+port 0 : 101 streams at 50.5% of line rate
+
+port 0 : 102 streams at 51.0% of line rate
+
+port 0 : 103 streams at 51.5% of line rate
+
+port 0 : 104 streams at 52.0% of line rate
+
+port 0 : 105 streams at 52.5% of line rate
+
+port 0 : 106 streams at 53.0% of line rate
+
+port 0 : 107 streams at 53.5% of line rate
+
+port 0 : 108 streams at 54.0% of line rate
+
+port 0 : 109 streams at 54.5% of line rate
+
+port 0 : 110 streams at 55.0% of line rate
+
+port 0 : 111 streams at 55.5% of line rate
+
+port 0 : 112 streams at 56.0% of line rate
+
+port 0 : 113 streams at 56.5% of line rate
+
+port 0 : 114 streams at 57.0% of line rate
+
+port 0 : 115 streams at 57.5% of line rate
+
+port 0 : 116 streams at 58.0% of line rate
+
+port 0 : 117 streams at 58.5% of line rate
+
+port 0 : 118 streams at 59.0% of line rate
+
+port 0 : 119 streams at 59.5% of line rate
+
+port 0 : 120 streams at 60.0% of line rate
+
+port 0 : 121 streams at 60.5% of line rate
+
+port 0 : 122 streams at 61.0% of line rate
+
+port 0 : 123 streams at 61.5% of line rate
+
+port 0 : 124 streams at 62.0% of line rate
+
+port 0 : 125 streams at 62.5% of line rate
+
+port 0 : 126 streams at 63.0% of line rate
+
+port 0 : 127 streams at 63.5% of line rate
+
+port 0 : 1 streams at 0.5% of line rate
+
+port 0 : 2 streams at 1.0% of line rate
+
+port 0 : 3 streams at 1.5% of line rate
+
+port 0 : 4 streams at 2.0% of line rate
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams" time="0.608"><system-out><![CDATA[
+num cores 7 num 9k mbufs 20 num 4k mbufs 20
+num_latency_streams:128
+num_flow_stat_streams:127
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams_random" time="60.978"><system-out><![CDATA[
+num cores 7 num 9k mbufs 20 num 4k mbufs 20
+num_latency_streams:6
+  total percent:1.0 (0.16666666666666666 per stream)
+num_flow_stat_streams:110
+  total percent:1.0 (0.00909090909090909 per stream)
+Duration: 60
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_one_stream" time="0.119"><system-out><![CDATA[
+num cores 7 num 9k mbufs 20 num 4k mbufs 20
+
+injecting 1000 packets on port 0
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_x710_counters_wraparound" time="0.066"><skipped type="unittest.case.SkipTest" message="Test is only for i40e."><![CDATA[Exception: Test is only for i40e.
+]]></skipped><system-out><![CDATA[
+num cores 7 num 9k mbufs 20 num 4k mbufs 20
+Skip: Test is only for i40e.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_services_test.STLServices_Test" name="test_arp_service" time="3.941"></testcase></testsuite>

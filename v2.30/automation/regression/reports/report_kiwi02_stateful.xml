@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="0" failures="0" skip="0"><testcase classname="stateful_tests.trex_tcp_test.CTRexTcp_Test" name="test_tcp_http" time="155.397"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 0.0, u'm_tx_expected_bps': 0.0, u'm_tx_expected_cps': 0.0}
+Current tx rate:        {u'm_tx_bps': 2734849536.0, u'm_tx_cps': 9835.1, u'm_tx_pps': 336881.5}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 35, u'max-2': 150, u'max-3': 35}
+Average latency:        {'all': 29.025, u'port2': 32.3, u'port3': 22.5, u'port0': 39.3, u'port1': 22.0}
+Average window latency: {'all': 27.796, u'port2': 31.459, u'port3': 22.353, u'port0': 35.356, u'port1': 22.015}
+Total drops:            1537
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+router drop stats: {u'TenGigabitEthernet1/3/0': 707, u'TenGigabitEthernet0/2/0': 838, u'TenGigabitEthernet0/3/0': 707, 'total_drops': 3090, u'TenGigabitEthernet1/2/0': 838}
+TRex drop stats: 1537
+TRex CPU utilization: 18.52%, norm_cpu is : 24.9 Gb/core
+Err percent: 24.5147160295
+{u'client': {u'all': {u'__last': 0,
+                      u'm_active_flows': 39974,
+                      u'm_avg_size': 1694.3,
+                      u'm_est_flows': 39954,
+                      u'm_rx_bw_l7_r': 2524970200.9,
+                      u'm_rx_pps_r': 99220.5,
+                      u'm_tx_bw_l7_r': 19590252.9,
+                      u'm_tx_pps_r': 88506.0,
+                      u'redirect_rx_ok': 1,
+                      u'tcps_closed': 1958746,
+                      u'tcps_connattempt': 1998720,
+                      u'tcps_connects': 1998700,
+                      u'tcps_delack': 9968622,
+                      u'tcps_preddat': 12137606,
+                      u'tcps_rcvackbyte': 499662680,
+                      u'tcps_rcvackpack': 3989048,
+                      u'tcps_rcvbyte': 63999701332,
+                      u'tcps_rcvpack': 16126654,
+                      u'tcps_rttupdated': 5987748,
+                      u'tcps_segstimed': 5987798,
+                      u'tcps_sndacks': 13949364,
+                      u'tcps_sndbyte': 497676300,
+                      u'tcps_sndctrl': 1998720,
+                      u'tcps_sndpack': 1998700,
+                      u'tcps_sndtotal': 17946784}},
+ u'server': {u'all': {u'__last': 0,
+                      u'm_active_flows': 39974,
+                      u'm_avg_size': 1797.0,
+                      u'm_est_flows': 39953,
+                      u'm_rx_bw_l7_r': 19587820.5,
+                      u'm_rx_pps_r': 98347.2,
+                      u'm_tx_bw_l7_r': 2525467588.1,
+                      u'm_tx_pps_r': 78683.2,
+                      u'redirect_rx_ok': 1,
+                      u'tcps_accepts': 1998713,
+                      u'tcps_closed': 1958739,
+                      u'tcps_connects': 1998692,
+                      u'tcps_rcvackbyte': 63955955636,
+                      u'tcps_rcvackpack': 15948046,
+                      u'tcps_rcvbyte': 497674308,
+                      u'tcps_rcvpack': 3989064,
+                      u'tcps_rttupdated': 15948046,
+                      u'tcps_segstimed': 15956399,
+                      u'tcps_sndacks': 3989085,
+                      u'tcps_sndbyte': 64000178636,
+                      u'tcps_sndpack': 11967314,
+                      u'tcps_sndtotal': 15956399}}}
+]]></system-out></testcase></testsuite>

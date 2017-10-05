@@ -1,0 +1,1 @@
+cmd_/home/sugeshch/repo/trex/v2.30/ko/src/igb_uio.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/sugeshch/repo/trex/v2.30/ko/src/igb_uio.ko /home/sugeshch/repo/trex/v2.30/ko/src/igb_uio.o /home/sugeshch/repo/trex/v2.30/ko/src/igb_uio.mod.o ;  true

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="0" failures="0" skip="0"><testcase classname="stateful_tests.trex_tcp_test.CTRexTcp_Test" name="test_tcp_http" time="44.253"><system-out><![CDATA[
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 1027120.0, u'm_tx_expected_bps': 7677971968.0, u'm_tx_expected_cps': 27760.0}
+Current tx rate:        {u'm_tx_bps': 4652728832.0, u'm_tx_cps': 16408.0, u'm_tx_pps': 559589.2}
+Minimum latency:        {u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 5, u'max-1': 5}
+Average latency:        {'all': 2.5, u'port0': 3.0, u'port1': 2.0}
+Average window latency: {'all': 2.45, u'port0': 2.957, u'port1': 1.943}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    23
+
+
+LATEST DUMP:
+TRex CPU utilization: 69.44%, norm_cpu is : 22.71 Gb/core
+Err percent: 9.14729541632
+BYPASS the counter test for now
+]]></system-out></testcase></testsuite>
